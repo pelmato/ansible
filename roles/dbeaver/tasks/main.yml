@@ -1,0 +1,5 @@
+- name: Install dbeaver SQL Client
+  community.general.flatpak:
+    name: io.dbeaver.DBeaverCommunity
+    remote: flathub
+    state: present
