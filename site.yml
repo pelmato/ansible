@@ -1,6 +1,9 @@
 - name: Install dev workspace
-  hosts: localhost
-  remote_user: root
+  hosts: tests
+  remote_user: toto
+  become: yes
   roles:
-    - role: flatpak
-    - role: dbeaver
+    - role: zsh
+    - role: screen
+#    - role: flatpak
+#    - role: dbeaver

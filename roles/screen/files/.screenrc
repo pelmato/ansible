@@ -1,0 +1,3 @@
+hardstatus alwayslastline "%{b kB}%{s gB}%c%{b kB} %{b kR}%H %{b kB}%{s yB}%l%{b kB} %{b kB}%{rs Y}%-Lw%{BY}%50>%n%{R}%f%{B}%t%{YB}%+Lw%<"
+term screen-256color
+

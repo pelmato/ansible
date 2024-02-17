@@ -1,0 +1,18 @@
+- name: Install zsh
+  apt:
+    name: zsh
+    state: present
+
+- name: Copy zsh config
+  copy:
+    src: .zshrc
+    dest: "/home/{{user}}/"
+    mode: 0664
+    owner: "{{user}}"
+    group: "{{user}}"
+
+- name: default shell to zsh
+  become: yes
+  user:
+    name: "{{user}}"
+    shell: /bin/zsh
