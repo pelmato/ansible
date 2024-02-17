@@ -2,11 +2,16 @@
 
 ## Prérequis
 
-...
+- Ansible
 
 ## Installation
 
-- Cloner le repo en local.
+- Cloner le repo en local
+
+```shell
+git clone git@github.com:pelmato/ansible.git
+```
+
 - Lancer le playbook ansible
 
 ```shell
