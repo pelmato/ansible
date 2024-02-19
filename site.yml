@@ -5,5 +5,5 @@
   roles:
     - role: zsh
     - role: screen
-#    - role: flatpak
+    - role: flatpak
 #    - role: dbeaver
