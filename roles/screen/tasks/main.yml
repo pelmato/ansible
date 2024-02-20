@@ -1,4 +1,5 @@
 - name: Install screen
+  become: yes
   apt:
     name:
       - screen

@@ -1,0 +1,8 @@
+tests:
+  hosts:
+    test:
+      ansible_host: localhost
+      ansible_port: 2222
+      user: toto
+      git_username: "Pelmato"
+      git_email: "ctt-github@zygalio.net"

@@ -1,9 +1,9 @@
 - name: Install dev workspace
   hosts: tests
-  remote_user: toto
-  become: yes
+  remote_user: "{{ user }}"
   roles:
     - role: zsh
     - role: screen
     - role: flatpak
     - role: dbeaver
+    - role: git
