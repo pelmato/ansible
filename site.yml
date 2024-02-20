@@ -6,4 +6,4 @@
     - role: zsh
     - role: screen
     - role: flatpak
-#    - role: dbeaver
+    - role: dbeaver
