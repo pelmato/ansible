@@ -17,3 +17,9 @@ git clone git@github.com:pelmato/ansible.git
 ```shell
 ansible-playbook site.yml
 ```
+
+## Todo
+
+- nvm
+- java
+- vscode + extensions
