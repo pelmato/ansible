@@ -6,3 +6,4 @@ tests:
       user: toto
       git_username: "Pelmato"
       git_email: "ctt-github@zygalio.net"
+      java_version: 17

@@ -5,7 +5,7 @@ export SYSTEME;
 
 # Invite du shell zsh :
 # %B en gras
-# %U soulign�
+# %U souligné
 # M nom de l'ordinateur en entier
 # %m nom de la machine
 # %~ chemin
@@ -61,7 +61,7 @@ umask 022
 
 # History
 export HIST_STAMPS="yyyy-mm-dd"
-export HISTSIZE=1000
+export HISTSIZE=10000
 export SAVEHIST=$HISTSIZE
 export HISTFILE=~/.zsh_history
 
@@ -72,11 +72,15 @@ setopt no_beep
 setopt correct             # correction du nom de la commande
 setopt prompt_subst        # Autoriser les substitution dans un prompt
 setopt print_exit_value    # Afficher le code de sortie
-# The following lines were added by compinstall
 
+# The following lines were added by compinstall
 zstyle ':completion:*' completer _complete
 zstyle :compinstall filename '/home/cyril/.zshrc'
 
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion

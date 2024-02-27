@@ -3,6 +3,7 @@
   apt:
     name:
       - git
+      - meld
     state: present
 
 - name: Configure git username

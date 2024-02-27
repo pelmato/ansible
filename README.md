@@ -12,6 +12,8 @@
 git clone git@github.com:pelmato/ansible.git
 ```
 
+- Renseigner les variables dans [inventory.yml](./inventory.yml)
+
 - Lancer le playbook ansible
 
 ```shell
