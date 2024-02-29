@@ -29,3 +29,9 @@
     name: diff.tool
     scope: global
     value: meld
+
+- name: Copy repo cleanup script
+  copy:
+    src: clean-repo.sh
+    dest: "{{ ansible_env.HOME}}/bin/"
+    mode: 0755

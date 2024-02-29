@@ -7,7 +7,7 @@
 - name: Copy zsh config
   copy:
     src: .zshrc
-    dest: "/home/{{user}}/"
+    dest: "{{ansible_env.HOME}}"
     mode: 0664
     owner: "{{user}}"
     group: "{{user}}"

@@ -8,7 +8,7 @@
 - name: Copy configuration file for screen
   copy:
     src: .screenrc
-    dest: "/home/{{user}}/"
+    dest: "{{ansible_env.HOME}}"
     mode: 0664
     owner: "{{user}}"
     group: "{{user}}"
