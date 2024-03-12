@@ -22,6 +22,4 @@ ansible-playbook site.yml
 
 ## Todo
 
-- nvm
-- java
 - vscode + extensions
