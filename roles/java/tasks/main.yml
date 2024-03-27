@@ -1,5 +1,5 @@
 - name: Install Java
-  become: yes
+  become: true
   apt:
     name:
       - openjdk-{{java_version}}-jdk
