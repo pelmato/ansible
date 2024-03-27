@@ -1,0 +1,10 @@
+- name: Install Snap
+  become: true
+  apt:
+    name:
+      - snapd
+    state: present
+
+- name: Add snap-store
+  become: true
+  command: snap install core

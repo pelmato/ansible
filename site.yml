@@ -5,7 +5,8 @@
     - role: zsh
     - role: screen
     - role: flatpak
-    - role: dbeaver
+    - role: snap
     - role: git
     - role: java
     - role: npm
+    - role: dbeaver
