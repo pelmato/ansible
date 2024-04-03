@@ -3,6 +3,8 @@
 ## Prérequis
 
 - Ansible
+- Git
+- Être dans le groupe sudo
 
 ## Installation
 
