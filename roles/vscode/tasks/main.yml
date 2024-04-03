@@ -1,1 +1,7 @@
-# TODO
+- name: Install vscodium
+  community.general.snap:
+    name: codium
+    classic: true
+
+- name: Install Java extension
+  command: codium --install-extension redhat.java
