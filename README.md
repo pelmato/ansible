@@ -24,4 +24,4 @@ ansible-playbook site.yml
 
 ## Todo
 
-- vscode + extensions
+- vscode settings
