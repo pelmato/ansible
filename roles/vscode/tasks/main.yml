@@ -35,3 +35,11 @@
     - vscjava.vscode-spring-boot-dashboard
     - vscjava.vscode-spring-initializr
     - ziyasal.vscode-open-in-github
+
+- name: Copy vscode user settings
+  copy:
+    src: settings.json
+    dest: "{{ansible_env.HOME}}/.config/VSCodium/User/"
+    mode: 0664
+    owner: "{{user}}"
+    group: "{{user}}"

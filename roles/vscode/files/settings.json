@@ -1,0 +1,66 @@
+{
+  "debug.toolBarLocation": "docked",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "always"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 12,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.size": "fit",
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [120],
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.invisibleCharacters": true,
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+  "eslint.options": {
+    "extensions": [".ts", ".html"]
+  },
+  "eslint.validate": ["javascript", "typescript", "html"],
+  "extensions.autoUpdate": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/*.git": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/node_modules": true
+  },
+  "git.autofetch": true,
+  "git-graph.graph.colours": ["#cf2b52", "#fd8c44", "#fec04f", "#2da4a8", "#296094", "#3f1f56"], // https://www.schemecolor.com/bright-retro-tones.php
+  "git-graph.repository.fetchAndPrune": true,
+  "git-graph.repository.fetchAndPruneTags": true,
+  "java.completion.importOrder": ["#"],
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "/usr/lib/jvm/java-17-openjdk-amd64",
+      "default": true
+    }
+  ],
+  "java.debug.settings.hotCodeReplace": "auto",
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/cyril.thevenet/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+  "java.server.launchMode": "Standard",
+  "java.settings.url": "~/dev/vscode-java.prefs", //".settings/org.eclipse.jdt.core.prefs",
+  "prettier.printWidth": 120,
+  "redhat.telemetry.enabled": true,
+  "sonarlint.pathToNodeExecutable": "/home/cyril.thevenet/.nvm/versions/node/v18.16.0/bin/node",
+  "spring-boot.ls.java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.validate": true,
+  "terminal.integrated.confirmOnExit": "always",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.env.linux": {
+    "GTK_PATH": ""
+  },
+  "terminal.integrated.scrollback": 100000,
+  "terminal.integrated.shellIntegration.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Default Light+"
+}

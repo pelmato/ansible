@@ -24,4 +24,6 @@ ansible-playbook site.yml
 
 ## Todo
 
-- vscode settings
+- syncthing
+- signal
+- visualvm
