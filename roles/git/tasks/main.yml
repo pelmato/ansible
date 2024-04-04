@@ -4,6 +4,7 @@
     name:
       - git
       - meld
+      - gitg
     state: present
 
 - name: Configure git username

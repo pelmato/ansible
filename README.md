@@ -26,4 +26,3 @@ ansible-playbook site.yml
 
 - syncthing
 - signal
-- visualvm
