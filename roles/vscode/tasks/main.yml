@@ -7,10 +7,12 @@
 - name: Install vscodium extensions
   command: codium --install-extension {{ item }}
   loop:
+    - aaron-bond.better-comments
     - angular.ng-template
     - bradlc.vscode-tailwindcss
     - dbaeumer.vscode-eslint
     - eamodio.gitlens
+    - editorconfig.editorconfig
     - esbenp.prettier-vscode
     - firsttris.vscode-jest-runner
     - gabrielbb.vscode-lombok
@@ -26,6 +28,7 @@
     - redhat.vscode-yaml
     - sonarsource.sonarlint-vscode
     - timonwong.shellcheck
+    - usernamehw.errorlens
     - vmware.vscode-spring-boot
     - vscjava.vscode-java-debug
     - vscjava.vscode-java-dependency
@@ -34,6 +37,7 @@
     - vscjava.vscode-maven
     - vscjava.vscode-spring-boot-dashboard
     - vscjava.vscode-spring-initializr
+    - vscode-icons-team.vscode-icons
     - ziyasal.vscode-open-in-github
 
 - name: Copy vscode user settings

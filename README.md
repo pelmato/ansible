@@ -24,5 +24,6 @@ ansible-playbook site.yml
 
 ## Todo
 
+- extension gnome (barre à gauche)
 - syncthing
 - signal
