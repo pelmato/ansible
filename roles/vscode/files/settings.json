@@ -49,7 +49,7 @@
   "java.settings.url": "~/dev/vscode-java.prefs", //".settings/org.eclipse.jdt.core.prefs",
   "prettier.printWidth": 120,
   "redhat.telemetry.enabled": true,
-  "sonarlint.pathToNodeExecutable": "/home/cyril.thevenet/.nvm/versions/node/v18.16.0/bin/node",
+  "sonarlint.pathToNodeExecutable": "~/.nvm/versions/node/v20.12.2/bin/node",
   "spring-boot.ls.java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.validate": true,
