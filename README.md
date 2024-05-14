@@ -24,7 +24,6 @@ ansible-playbook site.yml
 
 ## Todo
 
-- firefox depuis le dépôt mozilla
 - extension gnome (barre à gauche)
 - syncthing
 - signal

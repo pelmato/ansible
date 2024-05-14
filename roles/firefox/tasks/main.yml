@@ -1,0 +1,28 @@
+- name: Get Mozilla key
+  become: true
+  get_url:
+    url: https://packages.mozilla.org/apt/repo-signing-key.gpg
+    dest: /etc/apt/keyrings/packages.mozilla.org.asc
+    mode: ugo+rw
+
+- name: Add the firefox repo
+  become: true
+  apt_repository:
+    repo: "deb [signed-by=/etc/apt/keyrings/packages.mozilla.org.asc] https://packages.mozilla.org/apt mozilla main"
+    filename: mozilla
+    state: present
+    update_cache: yes
+
+- name: Copy repo pin priority
+  become: true
+  copy:
+    src: mozilla
+    dest: "/etc/apt/preferences.d/mozilla"
+
+- name: Install Firefox
+  become: true
+  apt:
+    name:
+      - firefox
+      - firefox-l10n-fr
+    state: present

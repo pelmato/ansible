@@ -11,3 +11,4 @@
     - role: npm
     - role: dbeaver
     - role: vscode
+    - role: firefox
