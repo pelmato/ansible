@@ -26,4 +26,3 @@ ansible-playbook site.yml
 
 - extension gnome (dash to dock: barre à gauche)
 - syncthing
-- signal
