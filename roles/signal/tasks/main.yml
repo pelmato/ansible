@@ -1,0 +1,33 @@
+- name: Get Signal key
+  become: true
+  get_url:
+    url: https://updates.signal.org/desktop/apt/keys.asc
+    dest: /tmp/signal-keys.asc
+
+- name: Convert key to binary
+  become: true
+  command: gpg --dearmor /tmp/signal-keys.asc
+  args:
+    creates: /tmp/signal-keys.asc.gpg
+
+- name: Copy file
+  become: true
+  copy:
+    remote_src: true
+    src: "/tmp/signal-keys.asc.gpg"
+    dest: "/etc/apt/keyrings/signal-desktop-keyring.gpg"
+
+- name: Add Signal repo
+  become: true
+  apt_repository:
+    repo: "deb [arch=amd64 signed-by=/etc/apt/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main"
+    filename: signal
+    state: present
+    update_cache: yes
+
+- name: Install Signal
+  become: true
+  apt:
+    name:
+      - signal-desktop
+    state: present

@@ -12,3 +12,4 @@
     - role: dbeaver
     - role: vscode
     - role: firefox
+    - role: signal
