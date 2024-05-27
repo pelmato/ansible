@@ -11,7 +11,6 @@
     - angular.ng-template
     - bradlc.vscode-tailwindcss
     - dbaeumer.vscode-eslint
-    - eamodio.gitlens
     - editorconfig.editorconfig
     - esbenp.prettier-vscode
     - firsttris.vscode-jest-runner
@@ -37,7 +36,6 @@
     - vscjava.vscode-maven
     - vscjava.vscode-spring-boot-dashboard
     - vscjava.vscode-spring-initializr
-    - vscode-icons-team.vscode-icons
     - ziyasal.vscode-open-in-github
 
 - name: Copy vscode user settings

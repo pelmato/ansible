@@ -24,6 +24,6 @@ ansible-playbook site.yml
 
 ## Todo
 
-- extension gnome (barre à gauche)
+- extension gnome (dash to dock: barre à gauche)
 - syncthing
 - signal
