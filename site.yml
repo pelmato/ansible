@@ -13,3 +13,4 @@
     - role: vscode
     - role: firefox
     - role: signal
+    - role: syncthing

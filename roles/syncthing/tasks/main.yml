@@ -1,0 +1,11 @@
+- name: Install Syncthing
+  become: true
+  apt:
+    name: syncthing
+    state: present
+
+- name: Copy repo pin priority
+  become: true
+  copy:
+    src: syncthing-start.desktop
+    dest: "{{ansible_env.HOME}}/.config/autostart/"

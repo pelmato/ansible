@@ -25,4 +25,3 @@ ansible-playbook site.yml
 ## Todo
 
 - extension gnome (dash to dock: barre à gauche)
-- syncthing
