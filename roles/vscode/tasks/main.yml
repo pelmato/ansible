@@ -30,6 +30,7 @@
     - timonwong.shellcheck
     - usernamehw.errorlens
     - vmware.vscode-spring-boot
+    - vscjava.vscode-gradle
     - vscjava.vscode-java-debug
     - vscjava.vscode-java-dependency
     - vscjava.vscode-java-pack
