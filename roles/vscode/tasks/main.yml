@@ -47,3 +47,11 @@
     mode: 0664
     owner: "{{user}}"
     group: "{{user}}"
+
+- name: Copy vscode custome keybindings
+  copy:
+    src: keybindings.json
+    dest: "{{ansible_env.HOME}}/.config/VSCodium/User/"
+    mode: 0664
+    owner: "{{user}}"
+    group: "{{user}}"
