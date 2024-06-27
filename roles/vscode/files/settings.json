@@ -1,11 +1,11 @@
 {
   "debug.toolBarLocation": "docked",
   "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.organizeImports": "always"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontSize": 12,
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
@@ -32,32 +32,32 @@
     "**/node_modules": true
   },
   "git.autofetch": true,
-  "git-graph.graph.colours": [
-    "#cf2b52",
-    "#fd8c44",
-    "#fec04f",
-    "#2da4a8",
-    "#296094",
-    "#3f1f56"
-  ], // https://www.schemecolor.com/bright-retro-tones.php
+  "git-graph.graph.colours": ["#cf2b52", "#fd8c44", "#fec04f", "#2da4a8", "#296094", "#3f1f56"], // https://www.schemecolor.com/bright-retro-tones.php
   "git-graph.repository.fetchAndPrune": true,
   "git-graph.repository.fetchAndPruneTags": true,
+  "gradle.nestedProjects": true,
   "java.completion.importOrder": ["#"],
   "java.configuration.runtimes": [
     {
       "name": "JavaSE-17",
-      "path": "/usr/lib/jvm/java-17-openjdk-amd64",
+      "path": "/home/cyril/.sdkman/candidates/java/17.0.11-tem",
+    },
+    {
+      "name": "JavaSE-21",
+      "path": "/home/cyril/.sdkman/candidates/java/21.0.3-tem",
       "default": true
     }
   ],
   "java.debug.settings.hotCodeReplace": "auto",
-  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/cyril.thevenet/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  "java.gradle.buildServer.enabled": "off",
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/cyril/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1-universal/server/lombok.jar\"",
   "java.server.launchMode": "Standard",
   "java.settings.url": "~/dev/vscode-java.prefs", //".settings/org.eclipse.jdt.core.prefs",
   "prettier.printWidth": 120,
   "redhat.telemetry.enabled": true,
   "sonarlint.pathToNodeExecutable": "/home/cyril/.nvm/versions/node/v20.14.0/bin/node",
-  "spring-boot.ls.java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
+  "spring-boot.ls.java.home": "/home/cyril/.sdkman/candidates/java/21.0.3-tem",
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.validate": true,
   "terminal.integrated.confirmOnExit": "always",
