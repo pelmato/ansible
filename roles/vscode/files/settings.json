@@ -6,8 +6,9 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "always"
   },
+  "editor.defaultFormatter": null,
   "editor.fontSize": 12,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.guides.bracketPairs": "active",
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.minimap.showSlider": "always",
@@ -18,6 +19,14 @@
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": true,
   "editor.unicodeHighlight.ambiguousCharacters": true,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.java",
+        "cmd": "java -jar /home/cyril/bin/google-java-format-1.19.2-all-deps.jar --replace ${file}"
+      }
+    ]
+  },
   "eslint.options": {
     "extensions": [".ts", ".html"]
   },
@@ -49,8 +58,8 @@
     }
   ],
   "java.debug.settings.hotCodeReplace": "auto",
-  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
-  "java.gradle.buildServer.enabled": "off",
+  "java.gradle.buildServer.enabled": "on",
+  "java.import.gradle.wrapper.enabled": true,
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/cyril/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1-universal/server/lombok.jar\"",
   "java.server.launchMode": "Standard",
   "java.settings.url": "~/dev/vscode-java.prefs", //".settings/org.eclipse.jdt.core.prefs",
