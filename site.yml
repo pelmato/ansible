@@ -2,12 +2,13 @@
   hosts: tests
   remote_user: "{{ user }}"
   roles:
-    - role: zsh
+    - role: fish
+    #    - role: zsh
     - role: screen
     - role: flatpak
     - role: snap
     - role: git
-    - role: java
+    #    - role: java
     - role: npm
     - role: dbeaver
     - role: vscode
