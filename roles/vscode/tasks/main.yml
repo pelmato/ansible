@@ -2,7 +2,7 @@
   become: true
   community.general.snap:
     name: codium
-    channel: latest/edge
+    channel: latest/stable
     classic: true
 
 - name: Install vscodium extensions
