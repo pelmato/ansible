@@ -3,15 +3,13 @@
   remote_user: "{{ user }}"
   roles:
     - role: fish
-    #    - role: zsh
     - role: screen
     - role: flatpak
     - role: snap
+    - role: librewolf
     - role: git
-    #    - role: java
     - role: npm
     - role: dbeaver
     - role: vscode
-    - role: firefox
     - role: signal
     - role: syncthing
