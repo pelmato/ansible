@@ -1,9 +1,26 @@
-- name: Install vscodium
+- name: Ajouter la clé publique VSCodium (54678CF75A278D9C)
   become: true
-  community.general.snap:
-    name: codium
-    channel: latest/stable
-    classic: true
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 54678CF75A278D9C
+
+- name: Ajouter le dépôt VSCodium
+  become: true
+  apt_repository:
+    repo: "deb [arch=amd64,arm64] https://download.vscodium.com/debs vscodium main"
+    filename: vscodium
+    state: present
+
+- name: Mettre à jour les paquets APT
+  become: true
+  apt:
+    update_cache: yes
+
+- name: Installer VSCodium
+  become: true
+  apt:
+    name: "codium"
+    state: present
 
 - name: Install vscodium extensions
   command: codium --install-extension {{ item }}
