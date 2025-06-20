@@ -1,23 +1,23 @@
 - name: Install extrepo
-  become: yes
+  become: true
   apt:
     name:
       - extrepo
     state: present
 
 - name: Activate LibreWolf extrepo
-  become: yes
+  become: true
   command: extrepo enable librewolf
   args:
     creates: /etc/apt/sources.list.d/extrepo_docker.sources
 
 - name: Update APT cache
-  become: yes
+  become: true
   apt:
     update_cache: yes
 
 - name: Install LibreWolf
-  become: yes
+  become: true
   apt:
     name:
       - librewolf

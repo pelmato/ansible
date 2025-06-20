@@ -19,14 +19,6 @@
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": true,
   "editor.unicodeHighlight.ambiguousCharacters": true,
-  "emeraldwalk.runonsave": {
-    "commands": [
-      {
-        "match": "\\.java",
-        "cmd": "java -jar /home/cyril/bin/google-java-format-1.19.2-all-deps.jar --replace ${file}"
-      }
-    ]
-  },
   "eslint.options": {
     "extensions": [".ts", ".html"]
   },
@@ -41,20 +33,18 @@
     "**/node_modules": true
   },
   "git.autofetch": true,
-  "git-graph.graph.colours": ["#cf2b52", "#fd8c44", "#fec04f", "#2da4a8", "#296094", "#3f1f56"], // https://www.schemecolor.com/bright-retro-tones.php
-  "git-graph.repository.fetchAndPrune": true,
-  "git-graph.repository.fetchAndPruneTags": true,
   "gradle.nestedProjects": true,
   "java.completion.importOrder": ["#"],
   "java.configuration.runtimes": [
     {
-      "name": "JavaSE-17",
-      "path": "/home/cyril/.sdkman/candidates/java/17.0.11-tem",
+      "name": "JavaSE-21",
+      "path": "/home/cyril/.sdkman/candidates/java/21-tem",
+      "default": true
     },
     {
-      "name": "JavaSE-21",
-      "path": "/home/cyril/.sdkman/candidates/java/21.0.3-tem",
-      "default": true
+      "name": "JavaSE-24",
+      "path": "/home/cyril/.sdkman/candidates/java/24-tem",
+      "default": false
     }
   ],
   "java.debug.settings.hotCodeReplace": "auto",
@@ -70,7 +60,7 @@
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.validate": true,
   "terminal.integrated.confirmOnExit": "always",
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.env.linux": {
     "GTK_PATH": ""
   },
