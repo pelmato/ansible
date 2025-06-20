@@ -26,6 +26,7 @@
     - redhat.vscode-commons
     - redhat.vscode-yaml
     - sonarsource.sonarlint-vscode
+    - tamasfe.even-better-toml
     - timonwong.shellcheck
     - usernamehw.errorlens
     - vscjava.vscode-gradle
