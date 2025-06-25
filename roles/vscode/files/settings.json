@@ -49,6 +49,7 @@
   ],
   "java.debug.settings.hotCodeReplace": "auto",
   "java.gradle.buildServer.enabled": "on",
+  "java.import.gradle.version": "8.14.2",
   "java.import.gradle.wrapper.enabled": true,
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/home/cyril/.vscode-oss/extensions/gabrielbb.vscode-lombok-1.0.1-universal/server/lombok.jar\"",
   "java.server.launchMode": "Standard",

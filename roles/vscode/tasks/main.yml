@@ -30,6 +30,7 @@
     - bradlc.vscode-tailwindcss
     - dbaeumer.vscode-eslint
     - editorconfig.editorconfig
+    - emeraldwalk.RunOnSave
     - esbenp.prettier-vscode
     - firsttris.vscode-jest-runner
     - ms-azuretools.vscode-containers
