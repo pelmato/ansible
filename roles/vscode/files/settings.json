@@ -19,6 +19,12 @@
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": true,
   "editor.unicodeHighlight.ambiguousCharacters": true,
+  "emeraldwalk.runonsave": {
+    "commands": [{
+      "match": "\\.java$",
+      "cmd": "java -jar /home/cyril/bin/google-java-format-1.19.2-all-deps.jar --replace ${file}"
+    }]
+  },
   "eslint.options": {
     "extensions": [".ts", ".html"]
   },
