@@ -55,7 +55,7 @@
       "default": false
     }
   ],
-  "java.debug.settings.hotCodeReplace": "auto",
+  "java.debug.settings.hotCodeReplace": "manual",
   "java.gradle.buildServer.enabled": "on",
   "java.import.gradle.version": "8.14.2",
   "java.import.gradle.wrapper.enabled": true,
