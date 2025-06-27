@@ -68,7 +68,7 @@
   },
   "prettier.printWidth": 120,
   "redhat.telemetry.enabled": true,
-  "sonarlint.pathToNodeExecutable": "/home/cyril/.nvm/versions/node/v20.19.2/bin/node",
+  "sonarlint.pathToNodeExecutable": "/home/cyril/.nvm/versions/node/v22.16.0/bin/node",
   "spring-boot.ls.java.home": "/home/cyril/.sdkman/candidates/java/21-tem",
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.validate": true,
