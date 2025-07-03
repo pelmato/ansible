@@ -14,3 +14,5 @@ function sdk
     bash -c "source '$HOME/.sdkman/bin/sdkman-init.sh'; sdk $argv[1..]"
 end
 fish_add_path (find ~/.sdkman/candidates/*/current/bin -maxdepth 0)
+
+set -x CHROME_BIN /snap/bin/chromium
