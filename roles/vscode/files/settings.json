@@ -41,6 +41,17 @@
     "**/node_modules": true
   },
   "git.autofetch": true,
+  "git-log--graph.branch-colors": [
+    "#cf2b52",
+    "#fd8c44",
+    "#fec04f",
+    "#2da4a8",
+    "#296094",
+    "#3f1f56"
+  ],
+  "git-log--graph.branch-color-custom-mapping": {
+    "main": "#888888"
+  },
   "gradle.nestedProjects": true,
   "java.completion.importOrder": ["#"],
   "java.configuration.runtimes": [
