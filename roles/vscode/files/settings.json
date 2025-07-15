@@ -93,5 +93,6 @@
   "terminal.integrated.shellIntegration.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Default Light+"
+  "workbench.colorTheme": "Default Light+",
+  "workbench.list.horizontalScrolling": true
 }
