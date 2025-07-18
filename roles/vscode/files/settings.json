@@ -27,9 +27,6 @@
       }
     ]
   },
-  "eslint.options": {
-    "extensions": [".ts", ".html"]
-  },
   "eslint.validate": ["javascript", "typescript", "html"],
   "extensions.autoUpdate": false,
   "files.exclude": {
