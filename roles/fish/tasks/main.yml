@@ -4,6 +4,11 @@
     name: fish
     state: present
 
+- name: Ensure fish config dir exists
+  file:
+    path: "{{ansible_env.HOME}}/.config/fish"
+    state: directory
+
 - name: Copy fish config
   copy:
     src: config.fish
