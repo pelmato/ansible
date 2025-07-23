@@ -6,7 +6,7 @@ end
 function nvm
     bash -c "source ~/.nvm/nvm.sh; nvm $argv"
 end
-set -U fish_user_paths $HOME/.nvm/versions/node/v20.17.0/bin $HOME/.local/bin $fish_user_paths
+set -U fish_user_paths $HOME/.nvm/versions/node/v22.17.1/bin $HOME/.local/bin $fish_user_paths
 
 
 # SDKMAN https://github.com/sdkman/sdkman-cli/issues/671
