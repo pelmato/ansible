@@ -39,12 +39,12 @@
   },
   "git.autofetch": true,
   "git-log--graph.branch-colors": [
-    "#cf2b52",
-    "#fd8c44",
-    "#fec04f",
-    "#2da4a8",
-    "#296094",
-    "#3f1f56"
+    "#a77cbf",
+    "#f57a9c",
+    "#f99f66",
+    "#ffd758",
+    "#a6d472",
+    "#31b5d1"
   ],
   "git-log--graph.branch-color-custom-mapping": {
     "main": "#888888"
