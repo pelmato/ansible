@@ -79,6 +79,7 @@
   "sonarlint.pathToNodeExecutable": "/home/cyril/.nvm/versions/node/v22.16.0/bin/node",
   "spring-boot.ls.java.home": "/home/cyril/.sdkman/candidates/java/21-tem",
   "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.lint.invalidConfigPath": "ignore",
   "tailwindCSS.validate": true,
   "terminal.integrated.confirmOnExit": "always",
   "terminal.integrated.defaultProfile.linux": "fish",
