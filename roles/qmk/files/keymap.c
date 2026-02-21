@@ -1,5 +1,23 @@
 #include QMK_KEYBOARD_H
 
+// Cmd -> S et I
+#define MODL_S LGUI_T(KC_S)
+#define MODR_L RGUI_T(KC_L)
+
+// Crtl -> E et T
+#define MODL_D LCTL_T(KC_D)
+#define MODR_K RCTL_T(KC_K)
+
+// Alt -> N et R
+#define MODL_F LALT_T(KC_F)
+#define MODR_J LALT_T(KC_J)
+
+// Touches speciales gauche
+#define TS_1 LSFT_T(KC_BSPC)
+#define TS_2 LT(_NAV,KC_SPC)
+#define TS_5 LT(_NAV,KC_SPC)
+#define TS_6 RALT_T(KC_ENT)
+
 enum layers {
     _BASE,
     _NAV
@@ -10,11 +28,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,  KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_CAPS,    KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                         KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT,
+      KC_CAPS,    KC_A,  MODL_S,  MODL_D,  MODL_F,    KC_G,                         KC_H,  MODR_J,  MODR_K,  MODR_L, KC_SCLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_ESC,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-             				LSFT_T(KC_BSPC),LT(_NAV,KC_SPC), KC_SPC,   KC_SPC,LT(_NAV,KC_SPC),RALT_T(KC_ENT)
+                                             TS_1,    TS_2,  KC_SPC,     KC_SPC,    TS_5,    TS_6
                                       //`--------------------------'  `--------------------------'
 
   ),

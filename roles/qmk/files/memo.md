@@ -25,12 +25,13 @@ $ sudo apt install -y \
     git \
     libnewlib-arm-none-eabi \
     pipx \
-    python3-full
+    python3-full \
     python3-pip \
     python3-venv \
     unzip \
-    zip \
-$ pipx install --user qmk
+    zip
+$ pipx install qmk
+$ qmk setup
 $ sudo cp ~/qmk_firmware/util/udev/50-qmk.rules /etc/udev/rules.d/
 $ sudo udevadm control --reload-rules
 $ sudo udevadm trigger
