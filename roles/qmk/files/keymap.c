@@ -13,8 +13,10 @@
 #define MODR_J LALT_T(KC_J)
 
 // Touches speciales gauche
-#define TS_1 LSFT_T(KC_BSPC)
+#define TS_1 KC_BSPC
 #define TS_2 LT(_NAV,KC_SPC)
+#define TS_3 KC_SPC
+#define TS_4 KC_SPC
 #define TS_5 LT(_NAV,KC_SPC)
 #define TS_6 RALT_T(KC_ENT)
 
@@ -28,11 +30,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                         KC_Y,    KC_U,    KC_I,    KC_O,   KC_P,  KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_CAPS,    KC_A,  MODL_S,  MODL_D,  MODL_F,    KC_G,                         KC_H,  MODR_J,  MODR_K,  MODR_L, KC_SCLN, KC_QUOT,
+      KC_CAPS,    KC_A,  MODL_S,  MODL_D,  MODL_F,    KC_G,                         KC_H,  MODR_J,  MODR_K,  MODR_L, KC_SCLN, KC_ENT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  KC_ESC,
+      KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                             TS_1,    TS_2,  KC_SPC,     KC_SPC,    TS_5,    TS_6
+                                             TS_1,    TS_2,    TS_3,       TS_4,    TS_5,    TS_6
                                       //`--------------------------'  `--------------------------'
 
   ),
