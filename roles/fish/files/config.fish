@@ -8,6 +8,7 @@ function nvm
 end
 set -U fish_user_paths $HOME/.nvm/versions/node/v22.17.1/bin $HOME/.local/bin $fish_user_paths
 
+alias rm='rm -i'
 
 # SDKMAN https://github.com/sdkman/sdkman-cli/issues/671
 function sdk
