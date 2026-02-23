@@ -37,7 +37,7 @@
     "**/.settings": true,
     "**/node_modules": true
   },
-  "git.autofetch": true,
+  "git.autofetch": false,
   "git-log--graph.branch-colors": [
     "#a77cbf",
     "#f57a9c",

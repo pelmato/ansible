@@ -4,7 +4,7 @@ tests:
       ansible_connection: local
       #ansible_host: localhost
       #ansible_port: 2222
-      user: toto
-      git_username: "Pelmato"
-      git_email: "ctt-github@zygalio.net"
-      java_version: 17
+      user: cyril
+      git_username: "Cyril Thévenet"
+      git_email: "cyril.thevenet@orpheo.fr"
+      java_version: 21

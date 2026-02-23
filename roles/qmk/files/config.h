@@ -1,29 +1,12 @@
-/*
-This is the c configuration file for the keymap
-
-Copyright 2012 Jun Wako <wakojun@gmail.com>
-Copyright 2015 Jack Humbert
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
 #pragma once
 
 //#define USE_MATRIX_I2C
 
-//#define QUICK_TAP_TERM 0
-//#define TAPPING_TERM 100
+// Temps pendant lequel QMK attend pour décider si une touche est tap/hold
+#define TAPPING_TERM 200
+// Déclenche un hold rapidement si une autre touche est pressée
+#define PERMISSIVE_HOLD
+#define QUICK_TAP_TERM 0
 
 #ifdef RGBLIGHT_ENABLE
     #define RGBLIGHT_EFFECT_BREATHING
