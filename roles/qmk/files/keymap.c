@@ -20,6 +20,13 @@
 #define MOD_5 LT(_NAV,KC_SPC)
 #define MOD_6 RALT_T(KC_ENT)
 
+#define CTRL_Z LCTL(KC_Z)
+#define CTRL_A LCTL(KC_A)
+#define CTRL_X LCTL(KC_X)
+#define CTRL_C LCTL(KC_C)
+#define CTRL_V LCTL(KC_V)
+#define CTRL_Y LCTL(KC_Y)
+
 enum layers {
     _BASE,
     _NAV
@@ -41,11 +48,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_NAV] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      XXXXXXX,  KC_TAB, KC_HOME,   KC_UP,  KC_END, KC_PGUP,                      KC_PSLS,    KC_7,    KC_8,    KC_9, XXXXXXX, KC_BSPC,
+       KC_TAB,  KC_TAB, KC_HOME,   KC_UP,  KC_END, KC_PGUP,                      KC_PSLS,    KC_7,    KC_8,    KC_9,   KC_NO, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, KC_CAPS, KC_LEFT, KC_DOWN,KC_RIGHT, KC_PGDN,                      XXXXXXX,    KC_4,    KC_5,    KC_6,    KC_0, XXXXXXX,
+      KC_CAPS,  CTRL_A, KC_LEFT, KC_DOWN,KC_RIGHT, KC_PGDN,                      KC_PMNS,    KC_4,    KC_5,    KC_6,    KC_0,  KC_ENT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX,                      XXXXXXX,    KC_1,    KC_2,    KC_3, XXXXXXX, XXXXXXX,
+      KC_LSFT,  CTRL_Z,  CTRL_X,  CTRL_C,  CTRL_V,  CTRL_Y,                      KC_PCMM,    KC_1,    KC_2,    KC_3,  KC_DOT, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                            KC_DEL, _______, _______,    _______, _______,  KC_ESC
                                       //`--------------------------'  `--------------------------'
