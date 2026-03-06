@@ -12,11 +12,11 @@
 #define MODL_F LALT_T(KC_F)
 #define MODR_J LALT_T(KC_J)
 
-// Touches speciales gauche
+// Touches speciales
 #define MOD_1 KC_BSPC
 #define MOD_2 LT(_NAV,KC_SPC)
-#define MOD_3 KC_SPC
-#define MOD_4 KC_SPC
+#define MOD_3 MO(_FUN)
+#define MOD_4 MO(_FUN)
 #define MOD_5 LT(_NAV,KC_SPC)
 #define MOD_6 RALT_T(KC_ENT)
 
@@ -29,7 +29,8 @@
 
 enum layers {
     _BASE,
-    _NAV
+    _NAV,
+    _FUN
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -56,7 +57,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                            KC_DEL, _______, _______,    _______, _______,  KC_ESC
                                       //`--------------------------'  `--------------------------'
+  ),
+
+    [_FUN] = LAYOUT_split_3x6_3(
+  //,-----------------------------------------------------.                    ,-----------------------------------------------------.
+       KC_TAB,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_BSPC,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+      KC_CAPS,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_NO,                        KC_NO,  MODR_J,  MODR_K,  MODR_L,   KC_NO,  KC_ENT,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+      KC_LSFT,   KC_F9,  KC_F10,  KC_F11,  KC_F12,   KC_NO,                        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_RSFT,
+  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
+                                           KC_DEL, _______, _______,    _______, _______,  KC_ESC
+                                      //`--------------------------'  `--------------------------'
   )
+
 };
 
 #ifdef ENCODER_MAP_ENABLE
