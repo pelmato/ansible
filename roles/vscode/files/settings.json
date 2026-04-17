@@ -1,4 +1,6 @@
 {
+  "angular.forceStrictTemplates": false,
+  "claudeCode.preferredLocation": "panel",
   "debug.toolBarLocation": "docked",
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.useInlineViewWhenSpaceIsLimited": false,
@@ -23,7 +25,7 @@
     "commands": [
       {
         "match": "\\.java$",
-        "cmd": "java -jar /home/cyril/bin/google-java-format-1.19.2-all-deps.jar --replace ${file}"
+        "cmd": "java -jar /home/cyril/bin/google-java-format-1.35.0-all-deps.jar --replace ${file}"
       }
     ]
   },
@@ -38,6 +40,9 @@
     "**/node_modules": true
   },
   "git.autofetch": false,
+  "git.autofetchPeriod": 1200,
+  "git.blame.editorDecoration.enabled": true,
+  "git.openRepositoryInParentFolders": "never",
   "git-log--graph.branch-colors": [
     "#a77cbf",
     "#f57a9c",
@@ -54,12 +59,12 @@
   "java.configuration.runtimes": [
     {
       "name": "JavaSE-21",
-      "path": "/home/cyril/.sdkman/candidates/java/21-tem",
+      "path": "/home/cyril/.sdkman/candidates/java/21.0.7-tem",
       "default": true
     },
     {
-      "name": "JavaSE-24",
-      "path": "/home/cyril/.sdkman/candidates/java/24-tem",
+      "name": "JavaSE-25",
+      "path": "/home/cyril/.sdkman/candidates/java/25.0.2-tem",
       "default": false
     }
   ],
@@ -76,8 +81,15 @@
   },
   "prettier.printWidth": 120,
   "redhat.telemetry.enabled": true,
-  "sonarlint.pathToNodeExecutable": "/home/cyril/.nvm/versions/node/v22.16.0/bin/node",
-  "spring-boot.ls.java.home": "/home/cyril/.sdkman/candidates/java/21-tem",
+  "redHatDependencyAnalytics.gradle.preferWrapper": "true",
+  "redHatDependencyAnalytics.npm.executable.path": "/home/cyril/.nvm/versions/node/v22.17.1/bin/npm",
+  "sonarlint.connectedMode.connections.sonarqube": [
+    {
+      "serverUrl": "https://sonarqube.orpheo.dev",
+      "connectionId": "https-sonarqube-orpheo-dev"
+    }
+  ],
+  "sonarlint.pathToNodeExecutable": "/home/cyril/.nvm/versions/node/v22.17.1/bin/node",
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.lint.invalidConfigPath": "ignore",
   "tailwindCSS.validate": true,
@@ -90,7 +102,28 @@
   "terminal.integrated.scrollback": 100000,
   "terminal.integrated.shellIntegration.enabled": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "visualvm.installation.visualvmPath": "/home/cyril/bin/visualvm_22/bin",
   "window.titleBarStyle": "custom",
   "workbench.colorTheme": "Default Light+",
-  "workbench.list.horizontalScrolling": true
+  "workbench.list.horizontalScrolling": true,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never",
+      "source.organizeImports": "always"
+    }
+  }
 }
